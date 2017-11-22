@@ -1,0 +1,15 @@
+@import './cairo-font.css';
+
+body {
+    font-family: 'cairo Regular', 'Times New Roman', Times, serif;
+}
+@import '_variables';
+@import '_navbar';
+@import '_button';
+@import '_carousel';
+@import '_center';
+@import '_latest-projects';
+@import '_client';
+@import '_blogs';
+@import '_footer';
+@import '_about';

@@ -1,0 +1,79 @@
+#latest-projects {
+    background-color: #5bc0de;
+
+    #carousel-last-projects{
+        right: 10%;
+        width: 80%;
+        .project-thumbnail {
+            position: relative;
+            width : 100%;
+            height: 175px;
+            margin-bottom: 30px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+           
+            .project-category {
+                position: absolute;
+                background: rgba($color:#292b2c, $alpha: .7);
+                left: 0px;
+                top: 10px;
+                font-weight: bold;
+                font-size: 15px;
+                padding: 10px;
+                border-bottom-right-radius: 10px;
+                border-top-right-radius: 10px;
+                box-shadow: 5px 5px 20px 0px #292b2c;
+                outline: none;
+                color: white;
+            }
+        }
+        .project-overlay {
+            position: absolute;
+            color: white;
+            background-color: rgba(#0275d8, $alpha: .3);
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            display:none;
+        }
+        .carousel-control.right,
+        .carousel-control.left {
+            background: transparent;
+            color: darken(#5bc0de, 50%);
+            text-shadow: none;
+            width:0;
+            i {
+                position: absolute;
+                top: calc(50% - 20px);
+            }
+        }
+        .carousel-control.right > i {
+            right: 26px;
+            @media (max-width: 991px){
+                right: 10px;
+             }
+        }
+        .carousel-control.left > i {
+            left: 20px;
+            @media (max-width: 991px){
+                left: 10px;
+             }
+        }
+       
+    }
+    h2 {
+        text-align: center;
+        font-weight: bold;
+        padding: 25px 0px;
+    }
+
+    
+}
+

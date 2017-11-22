@@ -1,0 +1,36 @@
+
+#client {
+    background-color: #5cb85c;
+    color:white;
+    .client-logos {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 25px;
+        @media (max-width: 991px){
+            flex-direction: column;
+            align-items: center;
+         }
+    }
+}
+
+
+
+.client {
+    background-color: $white;
+    width: 165px;
+    height: 75px;
+    margin-left: 8px;
+    margin-right: 8px;
+    @media (max-width: 991px){
+        margin-bottom: 10px;
+     }
+    > a > img {
+       position: absolute;
+       height: 60%;
+       width: 80%;
+       top: 20%;
+       right: 10%;
+    }
+}
+
+   

@@ -1,0 +1,37 @@
+@mixin button ($color1,$color2){
+    color: $color1;
+    padding: 13px 20px;
+    font-weight: bold;
+    outline: none;
+    &:hover {
+    background-color: $color1;
+    color: $color2;
+    }
+}
+.custom-btn {
+   @include button($brand-primary,$brand-secondary);
+}
+
+@mixin button-primary ($color1,$color2){
+    background-color: $color1;
+    width: 250px;
+    padding: 20px 20px;
+    font-weight: bold;
+    outline: none;
+    border-radius: 0px;
+    border: 1px solid $color2;
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:focus {
+        color: darken($color1, 50%);
+        box-shadow: 1px 1px 0px 0px $color1;
+        background-color: $color1;
+    }
+}   
+.btn-primary {
+    @include button-primary($brand-primary,$brand-info); 
+}
