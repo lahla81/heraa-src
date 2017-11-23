@@ -34,29 +34,29 @@ body {
       padding-bottom: 20px; }
 
 .custom-btn {
-  color: #0275d8;
+  color: #ff5b77;
   padding: 13px 20px;
   font-weight: bold;
   outline: none; }
   .custom-btn:hover {
-    background-color: #0275d8;
+    background-color: #ff5b77;
     color: #fff; }
 
 .btn-primary {
-  background-color: #0275d8;
+  background-color: #ff5b77;
   width: 250px;
   padding: 20px 20px;
   font-weight: bold;
   outline: none;
   border-radius: 0px;
-  border: 1px solid #5bc0de;
+  border: 1px solid #d9534f;
   display: block;
   margin: auto;
   margin-bottom: 15px; }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary:active:focus {
-    color: black;
-    box-shadow: 1px 1px 0px 0px #0275d8;
-    background-color: #0275d8; }
+    color: #5b0010;
+    box-shadow: 1px 1px 0px 0px #ff5b77;
+    background-color: #ff5b77; }
 
 #carousel-about {
   height: 450px; }
