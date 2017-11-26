@@ -34,29 +34,30 @@ body {
       padding-bottom: 20px; }
 
 .custom-btn {
-  color: #ff5b77;
+  color: #0275d8;
   padding: 13px 20px;
   font-weight: bold;
   outline: none; }
   .custom-btn:hover {
-    background-color: #ff5b77;
-    color: #fff; }
+    background-color: #0275d8;
+    color: white; }
 
 .btn-primary {
-  background-color: #ff5b77;
+  background-color: #0275d8;
   width: 250px;
   padding: 20px 20px;
   font-weight: bold;
   outline: none;
   border-radius: 0px;
-  border: 1px solid #d9534f;
+  border: 1px solid #5bc0de;
   display: block;
   margin: auto;
   margin-bottom: 15px; }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary:active:focus {
-    color: #5b0010;
-    box-shadow: 1px 1px 0px 0px #ff5b77;
-    background-color: #ff5b77; }
+    color: black;
+    box-shadow: 1px 1px 0px 0px #0275d8;
+    background-color: #0275d8;
+    border: 1px solid #0275d8; }
 
 #carousel-about {
   height: 450px; }
@@ -219,7 +220,7 @@ body {
   @media (max-width: 991px) {
     .client {
       margin-bottom: 10px; } }
-  .client > a > img {
+  .client a img {
     position: absolute;
     height: 60%;
     width: 80%;
@@ -327,3 +328,34 @@ body {
     @media (max-width: 991px) {
       #banner-about img {
         height: auto; } }
+
+#team-work {
+  padding: 7px 10px; }
+  #team-work .thumbnail {
+    border: 1px solid #e6e6e6; }
+    #team-work .thumbnail img {
+      margin-top: 50px; }
+    #team-work .thumbnail .caption h3 {
+      font-weight: bold; }
+    #team-work .thumbnail .caption hr {
+      border-top: 2px solid red;
+      width: 30px; }
+    #team-work .thumbnail .caption span {
+      font-weight: bold;
+      color: #999999; }
+    #team-work .thumbnail .caption .fa {
+      border: 1px solid #b3b3b3;
+      color: #b3b3b3;
+      border-radius: 3px;
+      height: 50px;
+      width: 50px;
+      padding-top: 10px;
+      margin-top: 20px; }
+      #team-work .thumbnail .caption .fa:hover {
+        color: white; }
+    #team-work .thumbnail .caption .fa-linkedin:hover {
+      background-color: #0077b5; }
+    #team-work .thumbnail .caption .fa-twitter:hover {
+      background-color: #1da1f2; }
+    #team-work .thumbnail .caption .fa-facebook:hover {
+      background-color: #4267b2; }
