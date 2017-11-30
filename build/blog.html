@@ -11,39 +11,119 @@
 <body>
     <div class="container-fluid">
         <!-- بداية الشريط العلوي -->
-        <div class="row">
+        <div class="row">    
             <nav class="navbar navbar-default custom-navbar">
                 <div class="navbar-header">
                     <a href="." class="navbar-brand">
-                        <img src="./images/Heraa1.png" alt="متجر مدنجي">
+                        <img src="./images/Heraa1.png" alt="شركة حراء">
                     </a>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-menu" aria-expanded="false">
+                            <i class="fa fa-bars fa-lg"></i>
+                        </button>
                 </div>
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="."> الرئيسية</a>
-                    </li>
-                    <li> 
-                        <a href="about.html">عن الشركة</a>
-                    </li>
-                    <li>
-                        <a href="projects.html">مشاريعنا</a>
-                    </li>
-                    <li class="active">
-                        <a href="blog.html">المدونة</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">تواصل معنا</a>
-                    </li>
-                </ul>
+                <div class="collapse navbar-collapse" id="navbar-collapse-menu" aria-expanded="true">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="."> الرئيسية</a>
+                        </li>
+                        <li>
+                            <a href="about.html">عن الشركة</a>
+                        </li>
+                        <li>
+                            <a href="projects.html">مشاريعنا</a>
+                        </li>
+                        <li class="active">
+                            <a href="blog.html">المدونة</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">تواصل معنا</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </div>  <!-- نهاية الشريط العلوي -->
         
-        
+        <!-- صورة البنر -->
+        <div class="row">
+            <div class="col-xs-12" id="banner">
+                <div class="overlay">
+                    <h1 class="hidden-xs hidden-sm">المدونة</h1>
+                    <h3 class="visible-xs visible-sm">المدونة</h3>
+                </div>
+                <img src="./images/banner-blog-title.jpg" alt="المدونة">
+            </div>
+        </div>
+        <!-- نهاية صورة البنر -->
+
+        <!-- بداية المدونات -->
+        <div class="row">
+            <div class="container" id="blogs">
+                <div class="col-md-7 col-md-offset-1">
+                    <div id="blog-summary" class="col-xs-12">
+                        <div class="media custom-media">
+                            <div class="media-middle media-left">
+                            <a href="#">
+                                <img class="media-object" src="./images/blog1.jpg" alt="التدوينة الأولي">
+                            </a>
+                            </div>
+                            <div class="media-body">
+                            <h4 >عنوان التدوينة</h4>
+                            <p>هناك حقيقة مثبتة منذ زمن طويل هي أن المحتوى المقروء لصفحة ما سيلهي القارئ</p>
+                            <a href="blog-details.html" class="btn btn-default custom-btn">قراءة المزيد ...</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="blog-summary" class="col-xs-12">
+                        <div class="media custom-media">
+                            <div class="media-middle media-left">
+                            <a href="#">
+                                <img class="media-object" src="./images/blog2.jpg" alt="التدوينة الثانية">
+                            </a>
+                            </div>
+                            <div class="media-body">
+                            <h4 >عنوان التدوينة</h4>
+                            <p>هناك حقيقة مثبتة منذ زمن طويل هي أن المحتوى المقروء لصفحة ما سيلهي القارئ</p>
+                            <a href="blog-details.html" class="btn btn-default custom-btn">قراءة المزيد ...</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="blog-summary" class="col-xs-12">
+                        <div class="media custom-media">
+                            <div class="media-middle media-left">
+                            <a href="#">
+                                <img class="media-object" src="./images/blog3.jpg" alt="التدوينة الثالثة">
+                            </a>
+                            </div>
+                            <div class="media-body">
+                            <h4 >عنوان التدوينة</h4>
+                            <p>هناك حقيقة مثبتة منذ زمن طويل هي أن المحتوى المقروء لصفحة ما سيلهي القارئ</p>
+                            <a href="blog-details.html" class="btn btn-default custom-btn">قراءة المزيد ...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="search-box">
+                        <h4>البحث فى المدونة</h4>
+                        <div class="line"></div>
+                        <form action="" class="form-inline">
+                            <div class="input-group">
+                                <input type="text" placeholder="كلمة البحث" class="form-control">
+                                <div class="input-group-btn">
+                                    <button type="submit" class="btn btn-default btn-search">ابحث الآن</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- نهاية المدونات -->
+
         <!-- بداية زيل الصفحة -->
         <div class="row">
             <div class="col-xs-12 center" id="footer">
-                <img src="./images/Heraa.png" alt="شركة حراء">
-                <hr>
+                <a href="."> <img src="./images/Heraa.png" alt="شركة حراء"></a>
+                <hr class="hr-small">
                 <div class="footer-links">
                     <a href="."> الرئيسية</a>
                     <a href="about.html">عن الشركة</a>
@@ -58,7 +138,7 @@
                     <div class="input-group input-group-lg">
                         <input type="text" class="form-control" id="footer-email" placeholder="البريد الإلكتروني" name="email">
                         <span class="input-group-btn">
-                            <button class="btn btn-defualt">متابعة</button>
+                            <button class="btn btn-defualt footer-btn">متابعة</button>
                         </span>
                     </div>
                 </form>

@@ -1,23 +1,22 @@
 .custom-btn {
-    color: #0275d8;
+    color: $blue;
     padding: 13px 20px;
     font-weight: bold;
     outline: none;
     &:hover {
-    background-color: #0275d8;
+    background-color: $blue;
     color: white;
     }
 }
 
-
 .btn-primary {
-    background-color:#0275d8;
+    background-color:$blue;
     width: 250px;
     padding: 20px 20px;
     font-weight: bold;
     outline: none;
     border-radius: 0px;
-    border: 1px solid #5bc0de;
+    border: 1px solid $blue;
     display: block;
     margin: auto;
     margin-bottom: 15px;
@@ -25,11 +24,71 @@
     &:focus,
     &:active,
     &:active:focus {
-        color: darken(#0275d8, 50%);
-        box-shadow: 1px 1px 0px 0px #0275d8;
-        background-color: #0275d8;
-        border: 1px solid #0275d8;
+        color: darken($blue, 50%);
+        box-shadow: 1px 1px 0px 0px $blue;
+        background-color: $blue;
+        border: 1px solid $blue;
     }
 }   
+
+#our-team, .custom-thumbnail {
+    .custom-btn {
+        margin-top: 5px;
+        padding: 5px 9px;
+        border-radius: 3px;
+        font-weight: normal;
+        border:1px solid  $blue;
+    }
+}
+
+.custom-media {
+    .custom-btn {
+        padding: 7px 10px;
+        margin-top: 10px;
+        background-color: $blue;
+        color: white;
+        font-weight: normal;
+    }
+    .custom-btn:hover{
+        background-color: white;
+        color: $blue;
+        border: 1px solid $blue;
+    }
+}
+#footer{
+    .footer-btn{
+        border-radius: 0px;
+        font-weight: bold;
+        color: #292b2c;
+        border: 1px solid #292b2c;
+        background-color: darken(white, 10%);
+        &:hover,
+        &:focus,
+        &:active,
+        &:focus:active {
+            background-color: #292b2c;
+            border: 1px solid darken(white, 10%);
+            color: darken(white, 10%);
+            outline: none;
+            transition-property: background-color, border-color;
+            transition-duration: 0.5s;
+        }
+    }
+}
+.btn-search {
+    font-weight: bold;
+    color: lighten(#ffffcc, 10%);
+    border: 1px solid #759b9b;
+    background-color: #759b9b;
+    &:hover,
+    &:focus,
+    &:active,
+    &:focus:active {
+        background-color: #759b9b;
+        color: darken(#ffffcc, 20%);
+        border: 1px solid #759b9b;
+    }
+    
+}
 
 
