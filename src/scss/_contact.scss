@@ -1,0 +1,43 @@
+.contact-us {
+    margin-top: 25px;
+    h3 {
+        font-weight: bold;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    textarea {
+        height: 150px;
+    }
+    .custom-form-control {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: 1px solid darken(white, 10%);
+        box-shadow: none;
+        border-radius: 1px;
+        &:focus{
+            border: 1px solid $blue;
+            box-shadow: none;
+        }
+    }
+}
+.contact-info {
+    margin-top: 40px;
+    font-weight: bold;
+    line-height: 2.5em;
+    .fa {
+        color: $blue;
+        margin: 10px;
+        text-align: center;
+    }
+}
+.follow-us {
+    font-weight: bold;
+}
+.contact-all {
+    .line {
+        border-top: 1px solid darken(white, 8%);
+        margin-top: 20px;
+        margin-bottom: 15px;
+        width: 50%;
+    }
+}

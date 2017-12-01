@@ -12,7 +12,9 @@
         font-weight: bold;
         color: darken(white, 50%);
         @media (max-width: 991px){
-           margin:0px;
+           margin-right:0px;
+           margin-left: 0px;
+           margin-bottom: 20px;
         }
     }
     h4 {

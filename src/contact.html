@@ -11,34 +11,90 @@
 <body>
     <div class="container-fluid">
         <!-- بداية الشريط العلوي -->
-        <div class="row">
+        <div class="row">    
             <nav class="navbar navbar-default custom-navbar">
                 <div class="navbar-header">
                     <a href="." class="navbar-brand">
-                        <img src="./images/Heraa1.png" alt="متجر مدنجي">
+                        <img src="./images/Heraa1.png" alt="شركة حراء">
                     </a>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-menu" aria-expanded="false">
+                            <i class="fa fa-bars fa-lg"></i>
+                        </button>
                 </div>
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="."> الرئيسية</a>
-                    </li>
-                    <li>
-                        <a href="about.html">عن الشركة</a>
-                    </li>
-                    <li>
-                        <a href="projects.html">مشاريعنا</a>
-                    </li>
-                    <li>
-                        <a href="blog.html">المدونة</a>
-                    </li>
-                    <li  class="active">
-                        <a href="contact.html">تواصل معنا</a>
-                    </li>
-                </ul>
+                <div class="collapse navbar-collapse" id="navbar-collapse-menu" aria-expanded="true">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="."> الرئيسية</a>
+                        </li>
+                        <li>
+                            <a href="about.html">عن الشركة</a>
+                        </li>
+                        <li>
+                            <a href="projects.html">مشاريعنا</a>
+                        </li>
+                        <li>
+                            <a href="blog.html">المدونة</a>
+                        </li>
+                        <li class="active">
+                            <a href="contact.html">تواصل معنا</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </div>  <!-- نهاية الشريط العلوي -->
-
         
+        <!-- صورة البنر -->
+        <div class="row">
+            <div class="col-xs-12" id="banner">
+                <div class="overlay">
+                    <h1 class="hidden-xs hidden-sm">تواصل معنا</h1>
+                    <h3 class="visible-xs visible-sm">تواصل معنا</h3>
+                </div>
+                <img src="./images/banner-contact.jpg" alt="عنوان التدوينة">
+            </div>
+        </div>
+        <!-- نهاية صورة البنر -->
+
+        <div class="row">
+            <div class="container">
+                <div class="col-md-7 col-xs-12 contact-us">
+                    <h3>تواصل معنا</h3>
+                    <form action="">
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control input-lg custom-form-control" placeholder="الإسم" required>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control input-lg custom-form-control" placeholder="الإيميل" required>
+                        </div>
+                        <div class="col-sm-12">
+                            <textarea name="mail" class="form-control input-lg custom-form-control" id="" cols="30" rows="8"placeholder="نص الرسالة"></textarea>
+                        </div>
+                        <button class="btn btn-default btn-primary">أرسل الرسالة</button>
+                    </form>
+                </div>
+                <div class="col-xs-12 col-md-4 col-md-offset-1 contact-all">
+                    <div class="contact-info">
+                        <div>
+                            <i class="fa fa-map-marker fa-lg"></i>العنوان : القاهرة الكبري / العاشر من رمضان
+                        </div>
+                        <div>
+                            <i class="fa fa-phone fa-lg" aria-hidden="true"></i> 02-215444785
+                        </div>
+                        <div>
+                            <i class="fa fa-envelope fa-lg" aria-hidden="true"></i>info@heraa.com
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <h4 class="follow-us">تابعنا علي الشبكات الإجتماعية</h4>
+                    <span class="social-contact">
+                        <a href="#" class="facebook"><i class="fa fa-facebook fa-lg"></i></a>
+                        <a href="#" class="twitter"><i class="fa fa-twitter fa-lg"></i></a>
+                        <a href="#" class="google-plus"><i class="fa fa-google-plus fa-lg"></i></a>
+                    </span>
+                </div>
+            </div>
+        </div>
+
         <!-- بداية زيل الصفحة -->
         <div class="row">
             <div class="col-xs-12 center" id="footer">

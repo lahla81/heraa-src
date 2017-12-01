@@ -30,29 +30,101 @@
         margin-bottom: 20px;
         margin-top: 15px;
         font-weight: bold;
+        text-align: justify;
     }
-    .search-box {
-        border: 1px solid darken(white, 10%);
-        margin-top: 30px;
-        padding: 15px;
-        width: 80%;
-        box-shadow: 0px 1px 1px 1px darken(white, 10%);
-        .line {
-            border-top: 2px solid darken(white, 10%);
+}
+.search-box {
+    border: 1px solid darken(white, 10%);
+    margin-top: 30px;
+    padding: 15px;
+    width: 80%;
+    box-shadow: 0px 1px 1px 1px darken(white, 10%);
+    .line {
+        border-top: 2px solid darken(white, 10%);
+        margin-top: 20px;
+        margin-bottom: 15px;
+        width: 20%;
+    }
+    h4 {
+        font-weight: bold;
+        
+    }
+    @media (max-width: 992px){
+            position: relative;
+            right: 5%;
+            width: 90%;
             margin-top: 20px;
-            margin-bottom: 15px;
-            width: 20%;
+            margin-bottom: 30px;
+    }
+}
+.blog-img {
+    margin-top: 25px;
+    img {
+        width: 100%;
+    }
+}
+.blog-details {
+    border: 1px solid darken(white, 10%);
+    padding: 20px;
+    h2,h3,.share-blog {
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    h2,.share-blog {
+        color: $blue;
+        margin-left: 20px;
+    }
+    .blog-date{
+        font-size: 90%;
+        font-weight: bold;
+        color: darken(white, 40%);
+    }
+    p {
+        color: darken(white, 25%);
+        font-size: 90%;
+        font-weight: bold;
+        line-height: 2em;
+        text-align: justify;
+    }
+    .line {
+        border-top: 2px solid darken(white, 10%);
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+    .social-share {
+        .facebook,
+        .twitter,
+        .google-plus {
+        text-decoration: none;
+        width: 30px;
+        height: 30px;
+        border: 1px solid darken(white, 10%);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        &:hover {
+            background-color: white;
         }
-        h4 {
-            font-weight: bold;
-            
         }
-        @media (max-width: 992px){
-                position: relative;
-                right: 5%;
-                width: 90%;
-                margin-top: 20px;
-                margin-bottom: 30px;
+        .facebook {
+            background-color: #4267b2;
+            &:hover {
+                color : #4267b2;
+            }
+        }
+        .twitter {
+            background-color: #1da1f2;
+            &:hover {
+                color : #1da1f2;
+            }
+        }
+        .google-plus {
+            background-color: #d34836;
+            &:hover {
+                color : #d34836;
+            }
         }
     }
 }
+
